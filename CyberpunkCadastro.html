@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk World</title>
+
+    <link rel="stylesheet" href="Cyberpunkcadastro.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="container">
+
+            <h1 class="titulo"><span class="destaque">Cyberpunk</span> World</h1>
+
+            <ul class="navbar">
+                <li>
+                    <a href="C:\Users\AMD\Documents\bandtec\ProjetoIndividual\CyberpunkInicial.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <span class="destaque">Cadastro</span>
+                </li>
+
+                <li> <a href="C:\Users\AMD\Documents\bandtec\ProjetoIndividual\CyberpunkLogin.html">
+                        Login
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="banner">
+
+        <div class="container">
+
+            <h1 class="destaque">
+                Crie sua conta!
+            </h1>
+            <h3 class="destaque">
+                comente suas experiencias e pontos de vista sobre o tema
+            </h3>
+
+        </div>
+    </div>
+
+
+
+    <div class="box">
+        <div class="container">
+
+            <center>
+                <div class="borda-cadastro">
+                    <div class="cadastro">
+                        <br><br>
+                        <input id="ipt_nome" type="text" placeholder="Nome*" autofocus> <br><br>
+                        <input id="ipt_email" type="email" placeholder="E-mail*"><br><br>
+                        <input id="senha" type="password" placeholder="Senha*"><br><br>
+                        <input id="c_senha" type="password" placeholder="Confirme sua senha*"
+                            onkeyup="analisa()"><br><br>
+                        <div id="senhas"></div>
+
+
+
+                        <p>Ao se registrar, você aceita nossos termos de uso e a nossa política de privacidade.</p>
+
+                        <button id="btmcadastro" onclick="cadastrar()"> CADASTRAR </button>
+                        <br><br>
+            </center>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+
+            <h4>Developed by
+
+                <a class="githublink" href="https://github.com/CaioHenriqueF">a Bandtec DEV!
+                </a>
+
+            </h4>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    function analisa() {
+        var s = senha.value;
+        var cs = c_senha.value;
+
+        senhas.innerHTML = '';
+
+        if (cs != s || s != cs) {
+            senhas.innerHTML = '<span style="color:red"> As senhas precisam ser idênticas </span> <br>'
+
+        } else {
+            senhas.innerHTML += '';
+        }
+    }
+    function cadastrar() {
+        var nome_ok = ipt_nome.value.length > 3;
+        var email_ok = ipt_email.value.indexOf('@') > 0;
+
+
+        if (nome_ok && email_ok) {
+            alert("Cadastro realizado com sussesso, agora você ja pode efetuar seu login!");
+            window.location.href = "CyberpunkLogin.html";
+        } else {
+            alert("Dados Invalidos,Tente novamente");
+        }
+    }
+</script>

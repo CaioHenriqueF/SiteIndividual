@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CyberpunkLogin.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <title>Login | BandSoftware</title>
+
+</head>
+
+<body>
+    <div class="text-login">
+        <h1><a href="C:\Users\AMD\Documents\bandtec\ProjetoIndividual\CyberpunkInicial.html"> <span class="destaque"> Cyberpunk</span> World<br>
+            </a> </h1>
+        <img src="Login.png" alt="Imagem de login">
+
+    </div>
+
+    <div class="login">
+        <div class="borda-login">
+            <p class="destaque">Faça seu login</p>
+            <input type="text" placeholder="E-mail" autofocus id="ipt_email">
+            <div id="senhaa"></div>
+            <input type="password" placeholder="Senha" id="ipt_senha">
+
+            <a class="link-text" href=""> <span class="destaque"> Esqueci minha senha</a></span>
+
+
+            <div id="resultado"> </div>
+            <button onclick="login()">Entrar</button>
+             
+            <span class="link-text">Não tem uma conta?<a href="cadastro.html"> Registre-se</a></span>
+            <div id="resultado">
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    function login() {
+        var login= ipt_email.value.indexOf('@') > 0;
+        var senha= ipt_senha.value.length;
+        
+        if (login == "" || senha == "") {
+          alert("Preencha todos os campos para continuar"); 
+         }
+          else if (login < 0) {
+          alert("login ou senha incorreto, verifique e tente novamente!");
+          }else{
+               window.location.href = "CyberpunkInicial.html";      
+          }
+       
+        
+    }
+</script>

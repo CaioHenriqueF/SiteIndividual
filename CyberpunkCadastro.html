@@ -17,7 +17,14 @@
 
         <div class="container">
 
-            <h1 class="titulo"><span class="destaque">Cyberpunk</span> World</h1>
+            <div id="app">
+                <div id="wrapper">
+                    <!-- Make sure data-text equals the text you put inside the tags. -->
+                    <h1 class="glitch" data-text="
+                    CYBERPUNK">CYBERPUNK</h1>
+                    <span class="sub">WORLD</span>
+                </div>
+            </div>
 
             <ul class="navbar">
                 <li>
@@ -63,7 +70,7 @@
                 <div class="borda-cadastro">
                     <div class="cadastro">
                         <br><br>
-                        <input id="ipt_nome" type="text" placeholder="Nome*" autofocus> <br><br>
+                        <input id="ipt_nome" type="text" placeholder="Nome*" > <br><br>
                         <input id="ipt_email" type="email" placeholder="E-mail*"><br><br>
                         <input id="senha" type="password" placeholder="Senha*"><br><br>
                         <input id="c_senha" type="password" placeholder="Confirme sua senha*"
@@ -88,7 +95,7 @@
 
             <h4>Developed by
 
-                <a class="githublink" href="https://github.com/CaioHenriqueF">a Bandtec DEV!
+                <a class="githublink" href="https://github.com/CaioHenriqueF"> <span class="destaquedois">Bandtec DEV!</span>
                 </a>
 
             </h4>
@@ -124,5 +131,9 @@
         } else {
             alert("Dados Invalidos,Tente novamente");
         }
+
+//minha parte do código acaba aqui//
+
+
     }
 </script>

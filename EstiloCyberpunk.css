@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-    background-color: rgb(109, 0, 109);
+    background-color: rgb(15, 15, 15);
     color: white; 
     overflow: auto;
     border-bottom: 3px solid rgb(216, 216, 0); 
@@ -53,11 +53,102 @@ body {
 .banner{
     text-align: center;
     background-color: palevioletred;
-    background-image: url(cyberpunkbackground002.jpg);
+    background-image: url(filmebanner03.jpg);
     background-repeat: no-repeat;
     background-size: cover ;
     height: 400px;
     
+}
+
+.bannerinicial{
+  text-align: center;
+  background-color: palevioletred;
+  background-image: url(filmebanner01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  height: 400px;
+  color: black;
+    font-size: 35px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.bannerfilme{
+  text-align: center;
+  background-color: palevioletred;
+  background-image: url(filmebanner03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  height: 400px;
+  color: black;
+    font-size: 35px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.bannerliteratura{
+  text-align: center;
+  background-color: palevioletred;
+  background-image: url(cyberpunkbackground002.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  height: 400px;
+  color: black;
+    font-size: 35px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.bannergames{
+  text-align: center;
+  background-color: palevioletred;
+  background-image: url(gamesbanner02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  height: 400px;
+  color: black;
+    font-size: 35px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.bannermusica{
+  text-align: center;
+  background-color: palevioletred;
+  background-image: url(musicabanner02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  height: 400px;
+  color: black;
+    font-size: 35px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.bannerestilo{
+  text-align: center;
+  background-color: palevioletred;
+  background-image: url(estilobanner03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  height: 400px;
+  color: black;
+    font-size: 35px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.bannerprotagonistas{
+  text-align: center;
+  background-color: palevioletred;
+  background-image: url(protagonistasbanner03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  height: 400px;
+  color: black;
+    font-size: 35px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 .banner h1{
@@ -70,29 +161,13 @@ body {
 
 .banner h3{
     color: black;
-    font-size: 35px;
+    font-size: 30px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(216, 216, 0);
 }
 
-.saiba-mais button{
-    border:0;
-    background-color: rgb(216, 216, 0);
-    color: white;
-    text-transform: uppercase;
-    height: 40px;
-    padding: 10px 30px 10px 30px;
-    margin-top: 25px;
-    border-radius: 25px;
-    cursor: pointer;
-}
 
-.saiba-mais{
-    text-align: center;
-    background-color: #232323;
-    height: 90px;
-    
-}
+
 
 .box img{
     height: 100px;
@@ -119,7 +194,7 @@ body {
 
 .footer{
 text-align: center;
-background-color: rgb(109, 0, 109);
+background-color: rgb(15, 15, 15);
 height: 90px;
 }
 
@@ -159,7 +234,7 @@ a:hover{
 }
 
 .destaquedois{
-color: rgb(179, 0, 179);
+color: #00fff9;
 }
 
 .box .container h1{

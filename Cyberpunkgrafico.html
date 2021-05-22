@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    
+<style>
+    .meu-grafico {
+    width: 60%;
+    margin: auto;
+}
+</style>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="container">
+            <div id="app">
+                <div id="wrapper">
+
+                    <h1 class="glitch" data-text="
+                    CYBERPUNK">CYBERPUNK</h1>
+                    <span class="sub">WORLD</span>
+                </div>
+            </div>
+
+
+            <ul class="navbar">
+                <li><span class="destaque">Home</span></li>
+
+                <li>
+                    <a href="file:///C:/Users/AMD/Documents/bandtec/ProjetoIndividual/CyberpunkCadastro.html">
+                        Cadastro
+                    </a>
+                </li>
+                <li>
+
+                    <a href="C:\Users\AMD\Documents\bandtec\ProjetoIndividual\CyberpunkLogin.html">
+                        Login
+                    </a>
+                </li>
+
+                <li>
+                    <a href="C:\Users\AMD\Documents\bandtec\ProjetoIndividual\Cyberpunkminigame.html">
+                        Jogo
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    
+    <div style="background-color: rgb(78, 78, 78);" class="meu-grafico">
+       
+        <canvas id="myChart"></canvas>
+    </div>
+   
+</body>
+
+</html>
+
+<script>
+    
+    var ctx = document.getElementById('myChart');
+
+    
+    var meuGrafico = new Chart(ctx, {
+        
+        type: 'bar',
+
+        
+        data: {
+           
+            labels: ["jan", "fev", "mar", "abr", "mai", "jun"],
+            
+            datasets: [
+             
+            {
+                
+                label: "Rendimentos 2021", 
+                
+                data: [6, 2, 5, 4, 11, 9],
+                
+                borderWidth: 5,
+                
+                borderColor: 'black',
+                
+                backgroundColor: 'transparent',
+            },
+
+            // Segundo dataset
+            {
+                
+                type: 'line',
+                label: "Rendimentos 2020",
+                data: [4, 11, 6, 6, 2, 7],
+                borderWidth: 5,
+                borderColor: 'rgb(216, 216, 0)',
+                backgroundColor: 'transparent'
+            }
+            ]
+        },
+        
+        
+        options: {
+            
+            title: {
+                
+                display: true,
+                
+                fontSize: 20,
+                
+                text: "Acessos",
+                
+                position: 'top',
+            },
+            legend: {
+                
+                display: true,
+                
+                reverse: true,
+                // onde?
+                position: 'right'
+            },
+            layout: {
+            padding: {
+                
+                left: 50,
+                top: 50
+            },
+           
+        }
+        }
+    })
+
+    
+    Chart.defaults.global.defaultFontColor = "#00fff9";
+</script>

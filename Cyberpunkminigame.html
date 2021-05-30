@@ -19,32 +19,29 @@
         <div class="container">
             <div id="app">
                 <div id="wrapper">
-                    
-                    <h1 class="glitch" data-text="
+                    <a href="index.html">
+                        <h1 class="glitch" data-text="
                     CYBERPUNK">CYBERPUNK</h1>
-                    <span class="sub">WORLD</span>
+                        <span class="sub">WORLD</span>
+                    </a>
                 </div>
             </div>
-            
+
 
             <ul class="navbar">
                 <li>
-                    <a href="C:\Users\AMD\Documents\bandtec\ProjetoIndividual\CyberpunkInicial.html">
+                    <a href="index.html">
                         <span> Home</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="file:///C:/Users/AMD/Documents/bandtec/ProjetoIndividual/CyberpunkCadastro.html">
-                        Cadastro
+                    <a href="publicacoes.html">
+                        Forum
                     </a>
                 </li>
 
-                <li>
-                    <a href="C:\Users\AMD\Documents\bandtec\ProjetoIndividual\CyberpunkLogin.html">
-                        Login
-                    </a>
-                </li>
+                
 
                 <li>
                     <span class="destaque">
@@ -58,7 +55,7 @@
     </div>
 
     <div class="bannerjogo">
-        
+
         <div class="container">
             <br><br>
             <h1 class="destaque">
@@ -115,7 +112,7 @@
                             <button id="button_verify" onclick="verify()" class="button">Verificar</button>
                         </center>
 
-<br><br>
+                        <br><br>
                     </div>
                 </div>
             </div>
@@ -480,7 +477,7 @@
         function renderGrid() {
             var tableGame = '<table id="gridGame" cellspacing=0 cellpadding=0>';
 
-            
+
             var cellContent_tableGame = '&nbsp';
             var cell = 0;
             for (var row = 1; row <= heightTable; row++) {
@@ -526,7 +523,7 @@
             var answer = input_answer.value;
 
             if (answer != '') {
-                 //answer = answer.toUperCase();
+                //answer = answer.toUperCase();
                 if (answer == special_words[cont_correctAnswer]) {
                     div_verifiedAnswer.classList.add('correctAnswer');
                     div_verifiedAnswer.innerHTML = '<br>Resposta Correta!';
